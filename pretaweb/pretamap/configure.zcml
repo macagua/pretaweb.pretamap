@@ -6,6 +6,11 @@
     i18n_domain="pretaweb.pretamap">
 
   <five:registerPackage package="." initialize=".initialize" />
+
+  <include package="Products.CMFCore" file="permissions.zcml" 
+           xmlns:zcml="http://namespace.zope.org/zcml"
+	   zcml:condition="have plone-41" />
+
   <include package=".browser" />
   <include file="profiles.zcml" />
   <i18n:registerTranslations directory="locales" />
