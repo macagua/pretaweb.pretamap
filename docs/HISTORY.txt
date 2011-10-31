@@ -5,3 +5,15 @@ Changelog
 -------------------
 
 - Initial release
+
+- Added informartion about the package into README.txt
+  [macagua]
+
+- Updated information and categorization of package into setup.py
+  [macagua]
+
+- Added an uninstall GS profiles
+  [macagua]
+
+- Add support for Plone 4.1
+  [macagua]
