@@ -1,14 +1,27 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="pretaweb.pretamap">
 
   <genericsetup:registerProfile
       name="default"
-      title="pretaweb.pretamap"
+      title="Install pretaweb.pretamap"
       directory="profiles/default"
       description='Extension profile for the "pretaweb.pretamap" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
+      i18n:attributes="title gs_profiles_default_title;
+                       description gs_profiles_default_description;"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Uninstall pretaweb.pretamap products"
+      directory="profiles/uninstall"
+      description='Extension profile for uninstall the "pretaweb.pretamap" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      i18n:attributes="title gs_profiles_uninstall_title;
+                       description gs_profiles_uninstall_description;"
       />
 
   <genericsetup:importStep
